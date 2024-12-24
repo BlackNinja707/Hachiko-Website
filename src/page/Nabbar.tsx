@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Hachilogo from '../assets/Hachilogo.png';
-import Whitepaper from '../assets/Whitepaper.png';
+import Whitepaper from '../assets/whitepaper.png';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
