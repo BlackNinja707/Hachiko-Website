@@ -8,7 +8,7 @@ const Welcome: React.FC = () => {
   return (
     <div className=" text-white relative bg-no-repeat bg-cover " style={{ backgroundImage: `url(${Vector})` }}
     >
-      <main className="flex flex-col md:flex-row z-10 relative mt-8 md:mt-[103px] mx-4 md:mx-[63px] justify-between pb-8 md:pb-[270px] relative">
+      <main className="flex flex-col md:flex-row z-10 mt-8 md:mt-[103px] mx-4 md:mx-[63px] justify-between pb-8 md:pb-[270px] relative">
         <img src={Gate} className='absolute top-0 left-0 w-full h-full z-[-1] min-[400px]:hidden' alt="Hachi Image" />
         {/* Left Content */}
         <div className="flex flex-col items-start text-center md:text-left md:flex justify-center max-[768px]:items-center ">
