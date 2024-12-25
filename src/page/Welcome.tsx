@@ -1,5 +1,5 @@
 import React from 'react';
-import Whitepape from '../assets/Whitepaper.png';
+import Whitepape from '../assets/whitepaper - Copy.png';
 import HachiDog from '../assets/Hachidog.png';
 import Vector from '../assets/headerbg.png';
 import Gate from '../assets/mobilebg.png';
