@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import About from './page/About'
 import HachiStory from './page/Story'
 import NFTCollection from './page/Loyalty'
