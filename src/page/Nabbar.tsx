@@ -2,7 +2,31 @@ import React, { useState } from 'react';
 import Hachilogo from '../assets/Hachilogo.png';
 import Whitepaper from '../assets/whitepaper.png';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+	section1Ref: React.RefObject<HTMLDivElement>;
+	section2Ref: React.RefObject<HTMLDivElement>;
+	section3Ref: React.RefObject<HTMLDivElement>;
+	section4Ref: React.RefObject<HTMLDivElement>;
+	section5Ref: React.RefObject<HTMLDivElement>;
+  section6Ref: React.RefObject<HTMLDivElement>;
+}
+
+const Navbar: React.FC<NavbarProps> = ({
+  section1Ref,
+	section2Ref,
+	section3Ref,
+	section4Ref,
+	section5Ref,
+  section6Ref,
+}) => {
+
+
+	const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+		if (ref.current) {
+			ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+		}
+	};
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,8 +34,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FEE8E9] text-white md:fixed w-full z-20">
-      <header className="bg-[#FEE8E9] text-[#684222] px-6 md:px-[63px] py-4 md:py-[24px]">
+    <div className="bg-[#FEE8E9] text-white md:fixed w-full z-20 backdrop-blur-sm md:bg-[#FEE8E9]/20 select-none">
+      <header className=" text-[#684222] px-6 md:px-[63px] py-4 md:py-[24px]">
         <nav className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center z-10">
@@ -20,15 +44,16 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-4 text-[16px] md:text-[19px] font-sans gap-4 md:gap-10 z-10">
-            <a href="#" className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Home</a>
-            <a href="#" className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">About</a>
-            <a href="http://198.18.197.202:5175/" target="_blank" className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Partnership</a>
-            <a href="#" className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Team</a>
-            <a href="#" className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">NFT</a>
+            <div onClick={() => scrollToSection(section1Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Home</div>
+            <div onClick={() => scrollToSection(section2Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">About</div>
+            <div onClick={() => scrollToSection(section3Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">NFT</div>
+            <div onClick={() => scrollToSection(section4Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Team</div>
+            <div onClick={() => scrollToSection(section5Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Partnership</div>
+            <div onClick={() => scrollToSection(section6Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Tokenomics</div>
           </div>
 
           {/* Whitepaper Button */}
-          <a href='https://medium.com/@kobayashi_82096/loyalty-in-code-the-hachi-token-vision-830e2adc55d9' target='_blank' className="hover:text-gray-400 hover:scale-[1.1] transition-all font-semibold leading-[23px]">
+          <a href='https://medium.com/@kobayashi_82096/loyalty-in-code-the-hachi-token-vision-830e2adc55d9' target='_blank' className="hover:scale-[1.1] transition-all font-semibold leading-[23px]">
             <div className="hidden md:flex relative justify-center items-center text-[15px] font-sans opacity-85 font-bold cursor-pointer hover:opacity-100">
               <img src={Whitepaper} alt="Whitepaper" className="max-w-[130px] md:max-w-[163px] max-h-[45px] md:max-h-[56px]" />
               <span className="absolute text-[#FDDEDF] leading-[23px]">WHITEPAPER</span>
@@ -45,26 +70,31 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-[#FEE8E9] mt-4 p-4 rounded-lg shadow-lg">
+          <div className="md:hidden bg-[#FEE8E9] mt-4 p-4 rounded-lg shadow-lg translate-all">
             <ul className="space-y-4 text-[#684222] font-sans text-[16px]">
               <li>
-                <a href="#" className="block hover:text-gray-400">Home</a>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Home</a>
               </li>
               <li>
-                <a href="#" className="block hover:text-gray-400">About</a>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">About</a>
               </li>
               <li>
-                <a href="#" className="block hover:text-gray-400">Partnership</a>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">NFT</a>
               </li>
               <li>
-                <a href="#" className="block hover:text-gray-400">Team</a>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Team</a>
               </li>
               <li>
-                <a href="#" className="block hover:text-gray-400">NFT</a>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Partnership</a>
               </li>
-              <li className="flex justify-center items-center relative">
-                <img src={Whitepaper} alt="Whitepaper" className="max-w-[130px] max-h-[45px]" />
-                <span className="absolute text-[#FDDEDF] text-[14px] leading-[20px]">WHITEPAPER</span>
+              <li>
+                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Tokenomics</a>
+              </li>
+              <li className="flex justify-center items-center relative opacity-85 hover:opacity-100 cursor-pointer translate-all hover:scale-105">
+                <a href='https://medium.com/@kobayashi_82096/loyalty-in-code-the-hachi-token-vision-830e2adc55d9' target='_blank' className="flex justify-center items-center relative hover:scale-[1.1] transition-all ">
+                  <img src={Whitepaper} alt="Whitepaper" className="max-w-[130px] max-h-[45px]" />
+                  <span className="absolute text-[#FDDEDF] text-[14px] leading-[20px] z-10">WHITEPAPER</span>
+                </a>
               </li>
             </ul>
           </div>

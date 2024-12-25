@@ -1,9 +1,9 @@
-import React from "react";
+import { forwardRef } from "react";
 import Aboutphoto from "../assets/Aboutphoto.png";
 
-const About: React.FC = () => {
+const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <section className=" py-10 px-6 border-b-[1px] border-b-[#FF7D82]">
+    <section ref={ref} className=" py-10 px-6 border-b-[1px] border-b-[#FF7D82] select-none">
         <div className="max-w-full mx-auto">
             <div className="grid md:grid-cols-2 gap-8 flex-col md:flex-row">
                 <div className="flex justify-center items-center relative box-border max-[768px]:hidden ">
@@ -83,6 +83,6 @@ const About: React.FC = () => {
         </div>
     </section>
   );
-};
+});
 
 export default About;

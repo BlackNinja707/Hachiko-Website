@@ -17,7 +17,7 @@ const HachiShibuyaStory: React.FC = () => {
     };
 
     return (
-        <div className=" text-gray-800 font-sans">
+        <div className=" text-gray-800 font-sans select-none">
             <div className="mx-4 md:mx-[100px] flex flex-col justify-center">
                 {/* Header Section */}
                 <div className="text-center py-6">

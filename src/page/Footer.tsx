@@ -7,7 +7,7 @@ import Twitter from "../assets/twitter.png"
 
 const Footer: React.FC = () => {
     return (
-        <div className="flex flex-col gap-[41px] bg-cover bg-no-repeat w-full text-white py-10 footer-bg" style={{ backgroundImage: `url(${footer})` }}>
+        <div className="flex flex-col gap-[41px] bg-cover bg-no-repeat w-full text-white py-10 footer-bg select-none" style={{ backgroundImage: `url(${footer})` }}>
             {/* Profile Section */}
             <div className="flex flex-col items-center">
                 <div className="max-w-[127px] max-h-[127px] ">

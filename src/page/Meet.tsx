@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef} from "react";
 import founder from "../assets/founder.jpg";
 import Visionary from "../assets/Visionary.jpg";
 import gardener from  "../assets/gardener.jpg";
@@ -19,18 +19,18 @@ const VisionaryCard: React.FC<{ name: string; role: string,}> = ({ name, role}) 
     );
 };
 
-const Visionaries: React.FC = () => {
+const Visionaries = forwardRef<HTMLDivElement>((_, ref) => {
     const visionaries = [
         { name: "Faber", role: "Co-Founder", image:founder, link:"https://x.com/Faber45one" },
         { name: "Aramis", role: "Visionary", image:Visionary, link:"https://x.com/0xAramis"  },
-        { name: "Kobayashi Kikuzaburo", role: "Gardener", image:gardener, link:"https://x.com/kikuzaburokoba"  },
+        { name: "Kobayashi", role: "Gardener", image:gardener, link:"https://x.com/kikuzaburokoba"  },
         { name: "Legendary", role: "The Chosen One", image:legendary, link:"https://x.com/LegendaryHeaven"  },
         { name: "Turmeric", role: "TEA", image:turmeric, link:"https://x.com/Samantha24498"  },
         { name: "Stan", role: "Student", image:student, link:"https://x.com/teh5TUDANT" },
     ];
 
     return (
-        <div className=" px-4 md:px-[128px] text-center">
+        <div ref={ref} className=" px-4 md:px-[128px] text-center select-none">
             {/* Header Section */}
             <div className="text-center mb-8 font-sans">
                 <div className="flex justify-center">
@@ -47,7 +47,7 @@ const Visionaries: React.FC = () => {
             {/* Grid Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-[50px] md:mb-[70px] justify-items-center">
                 {visionaries.map((visionary, index) => (
-                    <a href={visionary.link} target="_blank" className="hover:scale-[1.02] transition-all">
+                    <a href={visionary.link} target="_blank" className="hover:scale-[1.02] transition-all shadow-xl">
                         <div className="flex h-[75px] w-[300px] border-[0.5px] border-[#FF7D82]">
                             <img src={visionary.image} alt="Visionary" className="w-[73px] h-[73px]" />
                             <VisionaryCard key={index} name={visionary.name} role={visionary.role}/>
@@ -57,6 +57,6 @@ const Visionaries: React.FC = () => {
             </div>
         </div>
     );
-};
+});
 
 export default Visionaries;

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "tailwindcss/tailwind.css";
 import hachi1 from "../assets/hachi1.png";
 import hachi2 from "../assets/hachi2.jpg";
 import HachiCard from "../component/Hachicard";
 
-const NFTCollection: React.FC = () => {
+const NFTCollection = forwardRef<HTMLDivElement>((_, ref) => {
     const nfts = [
         { id: 1, name: "#1 HACHI", price: "0.003", image: hachi1 },
         { id: 2, name: "#2 HACHI", price: "0.003", image: hachi2 },
@@ -13,7 +13,7 @@ const NFTCollection: React.FC = () => {
     ];
 
     return (
-        <div className=" text-gray-800 font-sans py-10">
+        <div ref={ref} className=" text-gray-800 font-sans py-10 select-none">
             {/* Header Section */}
             <div className="text-center mb-8 font-sans">
                 <div className="flex justify-center">
@@ -45,6 +45,6 @@ const NFTCollection: React.FC = () => {
             </div>
         </div>
     );
-};
+});
 
 export default NFTCollection;
