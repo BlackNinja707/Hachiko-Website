@@ -1,5 +1,5 @@
 import React from 'react';
-import Whitepaper from '../assets/Whitepaper.png';
+import Whitepape from '../assets/Whitepaper.png';
 import HachiDog from '../assets/Hachidog.png';
 import Vector from '../assets/headerbg.png';
 import Gate from '../assets/mobilebg.png';
@@ -31,7 +31,7 @@ const Welcome: React.FC = () => {
           </div>
           <div className="flex justify-center md:justify-start items-center mt-6 hover:text-gray-400 hover:scale-[1.1] transition-all">
             <div className="relative flex justify-center items-center text-[15px] md:text-[17px] text-center font-sans opacity-85 font-bold cursor-pointer hover:opacity-100">
-              <img src={Whitepaper} alt="Hachi Image" className="w-[200px] md:w-[251px] max-h-[60px] md:max-h-[73px]" />
+              <img src={Whitepape} alt="Hachi Image" className="w-[200px] md:w-[251px] max-h-[60px] md:max-h-[73px]" />
               <span className="absolute text-[#FDDEDF] leading-[20px] md:leading-[23px]">
                 Stake Coming Soon
               </span>
