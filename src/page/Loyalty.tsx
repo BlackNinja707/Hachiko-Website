@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import "tailwindcss/tailwind.css";
 import hachi1 from "../assets/hachi1.png";
 import hachi2 from "../assets/hachi2.jpg";
