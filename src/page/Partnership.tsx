@@ -30,7 +30,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                 <div className="grid grid-cols-2 md:grid-cols-4 border-[#684222] border-t-[1px] border-l-[1px] z-10">
                     {/* Partnership Items */}
                     <div className="flex flex-col items-center justify-around border-[#684222] border-r-[1px] md:border-b-0 border-b-[1px] p-4">
-                        <a href=" https://t.me/Hoichi_Token" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
+                        <a href=" https://t.me/Hoichi_Token" target="_blank" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
                             <img
                                 src={TelegramImage}
                                 alt="Join Telegram"
@@ -40,7 +40,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                         </a>
                     </div>
                     <div className="flex flex-col items-center  justify-center border-[#684222] border-r-[1px] md:border-b-0 border-b-[1px] p-4 ">
-                        <a href="https://tehhoichitoken.com/" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
+                        <a href="https://tehhoichitoken.com/" target="_blank" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
                             <img
                                 src={HoichiTokenImage}
                                 alt="Hoichi Token"
@@ -50,7 +50,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                         </a>
                     </div>
                     <div className="flex flex-col items-center justify-center border-[#684222] border-r-[1px] p-4">
-                        <a href="lexiai.tech" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
+                        <a href="https://lexiai.tech" target="_blank" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
                             <img
                                 src={LexiAiTokenImage}
                                 alt="Lexi AI Token"
@@ -60,7 +60,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                         </a>
                     </div>
                     <div className="flex flex-col items-center justify-center border-[#684222] border-r-[1px] p-4">
-                        <a href="bridge.tehhoichitoken.com" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
+                        <a href="https://bridge.tehhoichitoken.com" target="_blank" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
                             <img
                                 src={HoichiBridgeImage}
                                 alt="Hoichi Torii Bridge - dApp"
@@ -75,7 +75,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                 <div className="grid grid-cols-5 md:grid-cols-5 border-[#684222]  border-t-[1px] z-10">
                     <div className="md:col-span-1 md:col-start-3 col-start-2 col-span-3 max[393px] border-[#684222] border-b-[1px] border-x-[1px] ">
                         <div className="flex flex-col items-center justify-center border-[#684222] p-4">
-                            <a href="http://old-horse.com/" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
+                            <a href="http://old-horse.com/" target="_blank" className="flex flex-col items-center justify-center hover:text-[#FF7D82] hover:scale-[1.02] transition-all">
                                 <img
                                     src={OldHorseImage}
                                     alt="The Old Horse"
