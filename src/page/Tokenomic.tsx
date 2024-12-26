@@ -48,8 +48,8 @@ const Tokenomics = forwardRef<HTMLDivElement>((_, ref) => {
                     <div className="text-[16px] md:text-[19px] leading-[23px] font-bold text-[#000000]">
                     Shibarium Network:
                     </div>
-                    <a href="https://www.shibariumscan.io/token/0x844dCee54919aD663F1345579bFeeD872DCB3FFC" target="_blank">
-                        <Tokenomicbutton name="TOTAL SUPPLY: 888 Billion" />
+                    <a href="https://www.shibariumscan.io/address/0xb96292532F9B2261BEBF67DE108bf7bDB52a1C59" target="_blank">
+                        <Tokenomicbutton name="TOTAL SUPPLY: 888 Trillion" />
                     </a>
                 </div>
                 <div>
