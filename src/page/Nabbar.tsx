@@ -44,12 +44,12 @@ const Navbar: React.FC<NavbarProps> = ({
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-4 text-[16px] md:text-[19px] font-sans gap-4 md:gap-10 z-10">
-            <div onClick={() => scrollToSection(section1Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Home</div>
-            <div onClick={() => scrollToSection(section2Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">About</div>
-            <div onClick={() => scrollToSection(section3Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">NFT</div>
-            <div onClick={() => scrollToSection(section4Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Team</div>
-            <div onClick={() => scrollToSection(section5Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Partnership</div>
-            <div onClick={() => scrollToSection(section6Ref)} className="hover:text-[#FF7D82] hover:scale-[1.2] transition-all font-semibold leading-[23px]">Tokenomics</div>
+            <div onClick={() => scrollToSection(section1Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">Home</div>
+            <div onClick={() => scrollToSection(section2Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">About</div>
+            <div onClick={() => scrollToSection(section3Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">NFT</div>
+            <div onClick={() => scrollToSection(section4Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">Team</div>
+            <div onClick={() => scrollToSection(section5Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">Partnership</div>
+            <div onClick={() => scrollToSection(section6Ref)} className="hover:text-[#FF7D82] hover:cursor-pointer hover:scale-[1.2] transition-all font-semibold leading-[23px]">Tokenomics</div>
           </div>
 
           {/* Whitepaper Button */}
