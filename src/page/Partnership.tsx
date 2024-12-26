@@ -81,7 +81,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                                     alt="The Old Horse"
                                     className="w-20 h-20 rounded-[10px]"
                                 />
-                                <p className="mt-4 font-medium text-[15px] leading-[26px]">The Old Horse</p>
+                                <p className="mt-4 font-medium text-center text-[15px] leading-[26px]">Geishas of Shibarium</p>
                             </a>
                         </div>
                     </div>
