@@ -6,10 +6,10 @@ import HachiCard from "../component/Hachicard";
 
 const NFTCollection = forwardRef<HTMLDivElement>((_, ref) => {
     const nfts = [
-        { id: 1, name: "#1 HACHI", price: "0.003", image: hachi1 },
-        { id: 2, name: "#2 HACHI", price: "0.003", image: hachi2 },
-        { id: 3, name: "#3 HACHI", price: "0.003", image: hachi1 },
-        { id: 4, name: "#4 HACHI", price: "0.003", image: hachi2 },
+        { id: 1, name: "#1 HACHI", price: "0.003", image: hachi1, url:"https://opensea.io/collection/hachi-genesis" },
+        { id: 2, name: "#2 HACHI", price: "0.003", image: hachi2, url:"https://opensea.io/collection/illustration-of-resilience" },
+        { id: 3, name: "#3 HACHI", price: "0.003", image: hachi1, url:"https://opensea.io/collection/hachi-genesis" },
+        { id: 4, name: "#4 HACHI", price: "0.003", image: hachi2, url:"https://opensea.io/collection/illustration-of-resilience" },
     ];
 
     return (
@@ -39,7 +39,7 @@ const NFTCollection = forwardRef<HTMLDivElement>((_, ref) => {
                     alt={nft.name}
                     className="w-full h-48"
                     />
-                    <HachiCard name={nft.name} price={nft.price} />
+                    <HachiCard name={nft.name} price={nft.price} url={nft.url} />
                 </div>
                 ))}
             </div>

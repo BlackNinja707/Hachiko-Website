@@ -66,7 +66,7 @@ const Partnerships = forwardRef<HTMLDivElement>((_, ref) => {
                                 alt="Hoichi Torii Bridge - dApp"
                                 className="w-[179px] h-[30px] mt-6"
                             />
-                            <p className="mt-7 font-medium text-[15px] leading-[26px]">Hoichi Torii Bridge</p>
+                            <p className="mt-7 font-medium text-[15px] leading-[26px]">Hoichi Torii Gateway</p>
                         </a>
                     </div>
                 </div>

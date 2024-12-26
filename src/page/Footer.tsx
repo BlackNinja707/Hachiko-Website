@@ -22,20 +22,20 @@ const Footer: React.FC = () => {
 
             {/* Social Icons Section */}
             <div className="flex justify-center space-x-[27px]">
-                <a href="https://Hachitoken.io" target="_blank" className="w-[74px] h-[74px] flex items-center justify-center border border-[#FF7D82] hover:bg-white hover:text-black transition">
-                    <img src={Facebook} alt="facebook"/>
+                <a href="https://Hachitoken.io" target="_blank" className="w-[74px] h-[74px] p-4 flex items-center justify-center border border-[#FF7D82] rounded-full hover:bg-gray-300 hover:bg-opacity-30 hover:text-black transition">
+                    <img src={Facebook} alt="website" className="w-auto h-auto"/>
                 </a>
-                <a href="https://t.me/hachitoken" target="_blank" className="w-[74px] h-[74px] flex items-center justify-center border border-[#FF7D82] hover:bg-white hover:text-black transition">
+                <a href="https://t.me/hachitoken" target="_blank" className="w-[74px] h-[74px] flex items-center justify-center border border-[#FF7D82] rounded-full hover:bg-gray-300 hover:bg-opacity-30 hover:text-black transition">
                 <img src={Telegram} alt="telegram"/>
                 </a>
-                <a href="https://x.com/hachishibarium" target="_blank" className="w-[74px] h-[74px] flex items-center justify-center border border-[#FF7D82] hover:bg-white hover:text-black transition">
+                <a href="https://x.com/hachishibarium" target="_blank" className="w-[74px] h-[74px] flex items-center justify-center border border-[#FF7D82] rounded-full hover:bg-gray-300 hover:bg-opacity-30 hover:text-black transition">
                     <img src={Twitter} alt="Twitter"/>
                 </a>
             </div>
 
             {/* Copyright Section */}
             <div className="text-center text-[18px] leading-[26px] font-medium mt-6">
-                Copyrighted @ HACHI.com 2024
+                Copyrighted @ hachitoken.io
             </div>
         </div>
     );
