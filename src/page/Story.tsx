@@ -22,7 +22,7 @@ const HachiShibuyaStory: React.FC = () => {
                 {/* Header Section */}
                 <div className="text-center py-6">
                     <div className="flex justify-center">
-                        <div className='text-[#FF7D82] bg-[#FEE8E9] px-3 md:px-[11px] py-2 md:py-[11px] font-bold text-[18px] md:text-[24px] border-[2px] border-[#FF7D82]'>忠誠心コミュニティイノベーション</div>
+                        <div className='text-[#FF7D82] bg-[#FEE8E9] px-3 md:px-[11px] py-2 md:py-[11px] font-bold text-[18px] md:text-[24px] border-[2px] border-[#FF7D82]'>ロイヤルティからレガシーへ</div>
                     </div>
                     <h1 className="text-[36px] md:text-[62px] leading-[40px] md:leading-[72px] font-bold text-[#684222]">
                         STORY OF <span className="text-[#FF7D82]">HACHI SHIBUYA</span>

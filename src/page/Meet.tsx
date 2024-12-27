@@ -34,7 +34,7 @@ const Visionaries = forwardRef<HTMLDivElement>((_, ref) => {
             {/* Header Section */}
             <div className="text-center mb-8 font-sans">
                 <div className="flex justify-center">
-                    <div className='text-[#FF7D82] bg-[#FEE8E9] px-3 md:px-[11px] py-2 md:py-[11px] font-bold text-[18px] md:text-[24px] border-[2px] border-[#FF7D82]'>デジタル資産以上のもの</div>
+                    <div className='text-[#FF7D82] bg-[#FEE8E9] px-3 md:px-[11px] py-2 md:py-[11px] font-bold text-[18px] md:text-[24px] border-[2px] border-[#FF7D82]'>ビジョナリーたちに会いましょう</div>
                 </div>
                 <h1 className="text-[36px] md:text-[62px] leading-[42px] md:leading-[72px] font-bold text-[#684222]">
                     Meet the <span className="text-[#FF7D82]">Visionaries</span>
