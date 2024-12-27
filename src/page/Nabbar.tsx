@@ -72,23 +72,23 @@ const Navbar: React.FC<NavbarProps> = ({
         {isOpen && (
           <div className="md:hidden bg-[#FEE8E9] mt-4 p-4 rounded-lg shadow-lg translate-all">
             <ul className="space-y-4 text-[#684222] font-sans text-[16px]">
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Home</a>
+              <li onClick={() => scrollToSection(section1Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Home</div>
               </li>
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">About</a>
+              <li onClick={() => scrollToSection(section2Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">About</div>
               </li>
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">NFT</a>
+              <li onClick={() => scrollToSection(section3Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">NFT</div>
               </li>
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Team</a>
+              <li onClick={() => scrollToSection(section4Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Team</div>
               </li>
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Partnership</a>
+              <li onClick={() => scrollToSection(section5Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Partnership</div>
               </li>
-              <li>
-                <a href="#" className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Tokenomics</a>
+              <li onClick={() => scrollToSection(section6Ref)} className='hover:cursor-pointer'>
+                <div className="block hover:text-[#FF7D82] font-semibold leading-[23px]">Tokenomics</div>
               </li>
               <li className="flex justify-center items-center relative opacity-85 hover:opacity-100 cursor-pointer translate-all hover:scale-105">
                 <a href='https://medium.com/@kobayashi_82096/loyalty-in-code-the-hachi-token-vision-830e2adc55d9' target='_blank' className="flex justify-center items-center relative hover:scale-[1.1] transition-all ">

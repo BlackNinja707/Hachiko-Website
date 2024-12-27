@@ -30,8 +30,8 @@ const Welcome = forwardRef<HTMLDivElement>((_, ref) => {
               <p>Built on the Shibarium blockchain, we reward loyalty, empower community,</p>
               <p>and drive positive social impact.</p>
             </div>
-            <div className="flex justify-center md:justify-start items-center mt-6 hover:text-gray-400 hover:scale-[1.1] transition-all">
-              <div className="relative flex justify-center items-center text-[15px] md:text-[17px] text-center font-sans opacity-85 font-bold cursor-pointer hover:opacity-100">
+            <div className="flex justify-center md:justify-start items-center mt-6 ">
+              <div className="relative flex justify-center items-center text-[15px] md:text-[17px] text-center font-sans opacity-85 font-bold cursor-no-drop">
                 <img src={Whitepape} alt="Hachi Image" className="w-[200px] md:w-[251px] max-h-[60px] md:max-h-[73px]" />
                 <span className="absolute text-[#FDDEDF] leading-[20px] md:leading-[23px]">
                   Stake Coming Soon
