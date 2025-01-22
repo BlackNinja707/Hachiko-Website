@@ -7,7 +7,7 @@
 ---
 
 Howdy, I'm a senior full-stack & blockchain developer. <br/>
-I have over 12 years of experience in building websites & web apps & software development and 5 years of experience in blockchain projects. <br/>
+I have over 9 years of experience in building websites, web apps, and software, along with 5+ years specializing in blockchain technology.  <br/>
 I am very strong in building frontend UI based on responsive features, translating UX/UI designs into interactive interfaces, and collaborating with the backend for API & web3 integrations. <br/>
 I have rich experience in building dapps, staking/farming/lending, NFT marketplace, P2E/bots etc, so I have been working in the blockchain field for around 5 years. <br/>
 As a professional who has thrived in roles such as Project Manager and Lead Developer, I bring to the table a comprehensive blend of technical expertise and leadership acumen. <br/>
